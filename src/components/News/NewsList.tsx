@@ -27,17 +27,20 @@ const NewsList = () => {
 
             <div className="flex flex-col md:flex-row gap-4 mb-8">
              
-                <input
+                <input 
                     type="text"
                     placeholder="Search news by title..."
-                    className="border p-2 rounded-lg w-full md:w-2/3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                    className=" border p-2 rounded-lg w-full md:w-2/3 shadow-sm 
+    bg-background text-foreground
+    placeholder:text-muted-foreground
+    focus:outline-none focus:ring-2 focus:ring-blue-500"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
 
           
                 <select
-                    className="border p-2 rounded-lg w-full md:w-1/3 shadow-sm text-black"
+                    className="bg-background border p-2 rounded-lg w-full md:w-1/3 shadow-sm "
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                 >
